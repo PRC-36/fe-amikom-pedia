@@ -45,6 +45,7 @@ const config = {
           200: "#F9FAFB",
           300: "#D2D5DA",
           400: "#7C7C7C",
+          500 : "#F2F2F2"
         },
         danger: {
           100: "#E11D48",
