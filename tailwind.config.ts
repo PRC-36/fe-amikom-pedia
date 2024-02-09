@@ -18,32 +18,34 @@ const config = {
       },
     },
     extend: {
-      colors : {
-        primary : {
-          main : '#6548AE',
-          surface : '#F5F5FF',
-          border : '#E0E0E0',
-          hover : '#3334CC',
-          pressed : '#21217A',
-          focus : '#fff',
+      colors: {
+        primary: {
+          main: "#6548AE",
+          surface: "#F5F5FF",
+          border: "#E0E0E0",
+          hover: "#3334CC",
+          pressed: "#21217A",
+          focus: "#fff",
         },
-        neutral : {
-          main : "#A1A1A1"
+        neutral: {
+          main: "#A1A1A1",
         },
-        text :  {
-          100: '#6B7280',
-          200 : "#111928",
-          300 : "#9E9E9E",
-          400 : '#404040',
-          500 : '#141619',
-          
+        text: {
+          100: "#6B7280",
+          200: "#111928",
+          300: "#9E9E9E",
+          400: "#404040",
+          500: "#141619",
         },
-        gray : {
-          100 : '#ECECEC',
-          200 : '#F9FAFB',
-          300 : "#D2D5DA",
-          400 : '#7C7C7C'
-        }
+        gray: {
+          100: "#ECECEC",
+          200: "#F9FAFB",
+          300: "#D2D5DA",
+          400: "#7C7C7C",
+        },
+        danger: {
+          100: "#E11D48",
+        },
       },
       keyframes: {
         "accordion-down": {
