@@ -18,7 +18,7 @@ const CarouselRegister: React.FunctionComponent<ICarouselRegisterProps> = (props
     return (
         <>
             <Slider {...settings}>
-                <div>
+                <div className='cursor-pointer'>
                     <div className="flex flex-col justify-center  items-center h-screen mx-auto w-[384px] text-center text-white gap-4">
                         <Image src={'/register/banner.png'} width={270} height={270} alt={'image carousel'}/>
                         <p className="text-3xl w-[300px]">Interaksi Sesama
@@ -31,7 +31,7 @@ const CarouselRegister: React.FunctionComponent<ICarouselRegisterProps> = (props
                         </p>
                     </div>
                 </div>
-                <div>
+                <div className='cursor-pointer'>
                     <div className="flex flex-col justify-center  items-center h-screen mx-auto w-[384px] text-center text-white gap-4">
                         <Image src={'/register/banner.png'} width={270} height={270} alt={'image carousel'}/>
                         <p className="text-3xl w-[300px]">Interaksi Sesama
@@ -44,7 +44,7 @@ const CarouselRegister: React.FunctionComponent<ICarouselRegisterProps> = (props
                         </p>
                     </div>
                 </div>
-                <div>
+                <div className='cursor-pointer'>
                     <div className="flex flex-col justify-center  items-center h-screen mx-auto w-[384px] text-center text-white gap-4">
                         <Image src={'/register/banner.png'} width={270} height={270} alt={'image carousel'}/>
                         <p className="text-3xl w-[300px]">Interaksi Sesama
@@ -57,7 +57,7 @@ const CarouselRegister: React.FunctionComponent<ICarouselRegisterProps> = (props
                         </p>
                     </div>
                 </div>
-                <div>
+                <div className='cursor-pointer'>
                     <div className="flex flex-col justify-center  items-center h-screen mx-auto w-[384px] text-center text-white gap-4">
                         <Image src={'/register/banner.png'} width={270} height={270} alt={'image carousel'}/>
                         <p className="text-3xl w-[300px]">Interaksi Sesama
