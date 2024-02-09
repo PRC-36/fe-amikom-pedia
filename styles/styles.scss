@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
  
+.slick-dots {
+  bottom: 12% !important;
+
+  @media (min-width: 1636px) {
+    bottom: 20% !important;
+  }
+}
+
+
+.slick-dots li button:before {
+  font-size: 14px !important;
+  color: white !important;
+}
