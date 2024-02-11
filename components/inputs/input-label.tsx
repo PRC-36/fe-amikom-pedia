@@ -16,7 +16,7 @@ const InputLabel: React.ForwardRefRenderFunction<HTMLInputElement, IInputLabelPr
     }
 
     return (
-        <div className="grid w-full max-w-sm items-center gap-2 ">
+        <div className="grid w-full items-center gap-2 ">
             <Label htmlFor={names} className='text-base font-semibold'>{names}</Label>
             <div className='relative'>
                 <Input ref={ref} type={isActive ? 'text' : type} id={names} placeholder={placeholder} className='text-text-500 ' autoComplete={names} {...props} />
