@@ -25,7 +25,7 @@ const StepperRegister: React.FunctionComponent<IStepperRegisterProps> = ({ urlAc
             {data.map((v, i, arr) => (
                 <div className='flex items-center gap-5' key={i}>
                     <div className={`flex items-center ${urlActive === v.slug ? 'text-primary-main font-semibold' : 'text-gray-400'}`} >
-                        <FaCircleCheck className={`${urlActive === v.slug ? 'block' : 'hidden'} mr-1`} />
+                        <FaCircleCheck className={`${urlActive === v.slug ? 'block' : 'hidden'} mr-[3px]`} />
                         <h1 className='text-base text-nowrap'>{v.name}</h1>
                     </div>
                     {i < arr.length - 1 && <span className='w-[130px] h-[2px] bg-gray-400'></span>}
