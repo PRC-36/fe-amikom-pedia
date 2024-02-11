@@ -4,6 +4,7 @@ const config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
+    "./layouts/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
@@ -36,6 +37,7 @@ const config = {
           300: "#9E9E9E",
           400: "#404040",
           500: "#141619",
+          600 : '#727272'
         },
         gray: {
           100: "#ECECEC",
