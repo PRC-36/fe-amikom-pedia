@@ -20,7 +20,7 @@ const RegisterLayout: React.FunctionComponent<IRegisterLayoutProps> = ({ childre
                         <h4 className='text-[22px] text-gray-600 leading-[33px] font-normal'>Logout</h4>
                     </div>
                 </nav>
-                <div className='flex justify-center flex-col items-center w-fit mx-auto'>
+                <div className='flex justify-center flex-col items-center w-fit container mx-auto'>
                     <h1 className='text-[28px] leading-[42px] font-semibold text-text-500'>Selamat Datang!</h1>
                     <p className='text-base text-gray-400 mt-2 mb-[30px]'>Mari kita mulai dengan membuat profil Anda</p>
                     <StepperRegister urlActive={urlActive} />
