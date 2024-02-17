@@ -11,17 +11,17 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 
 import { FaPen } from "react-icons/fa";
 import InputLabel from '@/components/inputs/input-label';
-import Link from 'next/link';
 import TextAreaLabel from '@/components/inputs/text-area-label';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 
 
 
 const ChooseProfil: React.FunctionComponent = (props) => {
-
+    const router = useRouter()
     const [image, setImage] = useState<string | null>(null);
     const [avatarImg, setAvatarImage] = useState<string>("/register/avatar-profil.png");
     interface IFormInput {
@@ -50,6 +50,7 @@ const ChooseProfil: React.FunctionComponent = (props) => {
     const onSubmitForm = (data: any) => {
         console.log(data)
         console.log(data.header)
+        router.push('/register/survey')
     };
 
 
