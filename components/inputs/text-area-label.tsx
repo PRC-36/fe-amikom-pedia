@@ -1,5 +1,5 @@
 import { Label } from '@radix-ui/react-label';
-import * as React from 'react';
+import React, { ForwardRefRenderFunction, forwardRef } from 'react';
 import { Textarea } from '../ui/textarea';
 
 interface ITextAreaLabelProps {
@@ -7,13 +7,13 @@ interface ITextAreaLabelProps {
   placeholder?: string
 }
 
-const TextAreaLabel: React.ForwardRefRenderFunction<HTMLInputElement, ITextAreaLabelProps> = ({ names = 'Nama', placeholder = 'Nama..', ...props }, ref) => {
+const TextAreaLabel: ForwardRefRenderFunction<HTMLTextAreaElement, ITextAreaLabelProps> = ({ names = 'Nama', placeholder = 'Nama..', ...props }, ref) => {
   return (
     <div className="grid w-full items-center gap-2 ">
       <Label htmlFor={names} className='text-base font-semibold'>{names}</Label>
-      <Textarea placeholder={placeholder} id={names} className='min-h-[100px] text-text-500 outline-none' />
+      <Textarea placeholder={placeholder}  ref={ref} id={names} name={names}  autoComplete={names} {...props} className='min-h-[100px] text-text-500 outline-none' />
     </div>
   );
 };
 
-export default TextAreaLabel;
+export default forwardRef(TextAreaLabel);
