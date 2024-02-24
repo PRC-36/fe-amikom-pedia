@@ -5,6 +5,8 @@ import Link from 'next/link';
 import * as React from 'react';
 import { useForm } from 'react-hook-form';
 import * as yup from "yup"
+import { Checkbox } from "@/components/ui/checkbox"
+
 
 interface ILoginProps {
 }
@@ -46,8 +48,20 @@ const Login: React.FunctionComponent<ILoginProps> = (props) => {
                         <InputLabel placeholder='Masukan Email Amikom' type='email' names='Email Amikom'  {...register("email")} />
                         <p className='text-[14px] leading-5 text-danger-100'>{errors.email?.message}</p>
                     </div>
-                    <div className='h-[90px]'>
+                    <div className='h-32'>
                         <InputLabel type='password' names='Password' placeholder='Masukan Password' {...register("password")} isVisible />
+                        <div className='flex justify-between items-center mt-2'>
+                            <div className="flex items-center space-x-2 ">
+                                <Checkbox id="terms2"  />
+                                <label
+                                    htmlFor="terms2"
+                                    className="text-base cursor-pointer"
+                                >
+                                  Ingat Saya
+                                </label>
+                            </div>
+                            <Link href={'/register'} className='text-primary-main'>Lupa Password?</Link>
+                        </div>
                         <p className='text-[14px] leading-5 text-danger-100'>{errors.password?.message}</p>
                     </div>
 
